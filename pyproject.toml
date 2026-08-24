@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qualiframe"
-version = "0.1.1"
+version = "0.1.2"
 description = "Automated data quality and statistical reporting for pandas DataFrames"
 readme = "README.md"
 requires-python = ">=3.10"
