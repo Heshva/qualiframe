@@ -1,17 +1,21 @@
-__pycache__/
-*.pyc
-*.pyo
-
+# Virtual environments
 .venv/
 venv/
 env/
+testenv/
 
-.idea/
+# Python cache
+__pycache__/
+*.py[cod]
 
+# Build files
 build/
 dist/
 *.egg-info/
 
-.pytest_cache/
+# IDE
+.idea/
 
-*.pdf
+# OS
+.DS_Store
+Thumbs.db

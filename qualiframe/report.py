@@ -25,27 +25,27 @@ def generate_report(
     statistics_report,
     duplicate_data,
     suggestion,
-    heatmap_file
+    heatmap_file,
+    output_dir
 ):
     """Generate the complete PDF data quality report."""
 
     file_name = Path(file).stem
-
-    output_path = f"{file_name}_report.pdf"
-
-    # Create the timestamp once so it stays the same throughout the report.
+    output_path = str(Path(output_dir) / f"{file_name}_report.pdf")
+    
+    #Create the timestamp once so it stays the same throughout the report.
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 
     # Document
 
     doc = SimpleDocTemplate(
-        output_path,
-        pagesize=A4,
-        rightMargin=40,
-        leftMargin=40,
-        topMargin=60,       # Space for header
-        bottomMargin=55     # Space for footer
-    )
+    output_path,
+    pagesize=A4,
+    rightMargin=40,
+    leftMargin=40,
+    topMargin=60,
+    bottomMargin=55
+)
     
     doc.timestamp = timestamp
     styles = getSampleStyleSheet()

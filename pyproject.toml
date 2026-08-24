@@ -4,9 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qualiframe"
-version = "0.1.0"
-description = "A lightweight data quality auditing tool"
+version = "0.1.1"
+description = "Automated data quality and statistical reporting for pandas DataFrames"
+readme = "README.md"
 requires-python = ">=3.10"
+
+authors = [
+    {name = "Heshva"}
+]
+
 dependencies = [
     "pandas",
     "matplotlib",
